@@ -8,6 +8,7 @@
       apt:
         name: '*'
         state: latest
+      become: true
       
     - name: Reboot servers
       reboot:
